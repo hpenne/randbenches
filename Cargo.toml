@@ -1,0 +1,64 @@
+[package]
+name = "randbenches"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+fastrand = "2.3.0"
+rand = "=0.9.0"
+smallrand = { path = "../smallrand" }
+
+[dev-dependencies]
+criterion = { version = "0.4", features = ["html_reports"] }
+
+[[bench]]
+name = "smallrand_xoshiro_u64"
+harness = false
+
+[[bench]]
+name = "smallrand_chacha_u64"
+harness = false
+
+[[bench]]
+name = "smallrand_xoshiro_range"
+harness = false
+
+[[bench]]
+name = "smallrand_xoshiro_range_f64"
+harness = false
+
+[[bench]]
+name = "smallrand_xoshiro_fill_u8"
+harness = false
+
+[[bench]]
+name = "smallrand_chacha_fill_u8"
+harness = false
+
+[[bench]]
+name = "rand_xoshiro_u64"
+harness = false
+
+[[bench]]
+name = "rand_chacha_u64"
+harness = false
+
+[[bench]]
+name = "rand_xoshiro_range"
+harness = false
+
+[[bench]]
+name = "rand_xoshiro_range_f64"
+harness = false
+
+[[bench]]
+name = "rand_xoshiro_fill_u8"
+harness = false
+
+[[bench]]
+name = "rand_chacha_fill_u8"
+harness = false
+
+[[bench]]
+name = "fastrand_range"
+harness = false
