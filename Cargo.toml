@@ -5,7 +5,7 @@ edition = "2024"
 
 [dependencies]
 fastrand = "2.3.0"
-rand = "=0.10.0-rc.0"
+rand = "0.10"
 smallrand = "1"
 # smallrand = { path = "../smallrand" }
 
